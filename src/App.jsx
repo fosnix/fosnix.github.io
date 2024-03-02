@@ -1,9 +1,9 @@
-import Head from "./components/Head"  
+import Head from "./components/Head"
 
 export default function App() {
   return (
     <>
-      <Head />
+      <Head email="udaytiwari360@outlook.com" />
     </>
   )
 }
