@@ -6,13 +6,13 @@ const Head = ({ email }) => {
     const mailto = "mailto:" + email;
 
     return (
-        <nav className="flex flex-col justify-between px-1 py-1 bg-slate-900 top-0 z-20 w-full shadow-lg">
-            <div className="flex justify-between">
-                <h2 className="text-gray-700 font-mono font-bold text-[22px] subpixel-antialiased">Uday Tiwari [<a href={mailto} className="hover:drop-shadow-glow">{email}</a>]</h2>
-                <h2 className="max-[590px]:invisible text-gray-700 font-mono font-bold text-[22px] subpixel-antialiased">[{today}]</h2>
+        <nav className="flex flex-col flex-wrap justify-between px-1 py-1 top-0 bg-stone-900 w- last:shadow-lg">
+            <div className="flex flex-wrap justify-between">
+                <h2 className="text-gray-700 font-Madimi text-xl subpixel-antialiased">Uday Tiwari <a href={mailto} className="font-press-start text-sm hover:drop-shadow-glowOrange">[{email}]</a></h2>
+                <h2 className="max-[590px]:invisible text-gray-700 font-press-start text-sm subpixel-antialiased">[{today}]</h2>
             </div>
 
-            <div className="flex justify-start space-x-7 text-[19px] subpixel-antialiased text-yellow-500 list-none">
+            <div className="min-[590px]:invisible flex font-press-start justify-evenly text-[15px] subpixel-antialiased text-yellow-700 list-none">
                 <li><a href="#">About</a></li>
                 <li><a href="#">Blogs</a></li>
                 <li><a href="#">Projects</a></li>
