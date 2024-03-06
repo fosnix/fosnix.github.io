@@ -3,14 +3,14 @@ import PropTypes from 'prop-types';
 const Head = ({ email }) => {
 
     return (
-        <nav className="flex flex-col flex-wrap justify-between px-1 py-1 top-0 bg-stone-900 w-full content-center last:shadow-lg">
-            <div className="flex flex-wrap justify-between">
-                <h2 className="text-gray-700 font-press-start text-[15px] subpixel-antialiased"><a href={"mailto:" + email} className="font-press-start text-sm hover:drop-shadow-glowOrange">Uday Tiwari</a></h2>
-            </div>
-            <div className="flex font-press-start justify-evenly text-[15px] subpixel-antialiased text-yellow-700 list-none bg-stone-700">
-                <li><a href="#">About</a></li>
-                <li><a href="#">Weblogs</a></li>
-                <li><a href="#">Projects</a></li>
+        <nav>
+            <div>
+                <h2><a href={"mailto:" + email}>Uday Tiwari</a></h2>
+                <div>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Weblogs</a></li>
+                    <li><a href="#">Projects</a></li>
+                </div>
             </div>
         </nav>
     )
