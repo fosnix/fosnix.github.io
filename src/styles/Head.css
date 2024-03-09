@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
 
 a {
     text-decoration: none;
@@ -8,23 +8,19 @@ a {
     color: wheat;
     font-family: "Manrope", sans-serif;
     font-size: 20px;
+    font-optical-sizing: auto;
     font-weight: bold;
 }
 
 h3 {
-    font-family: "Prompt", sans-serif;
+    font-family: "Jost", sans-serif;
     font-size: 27px;
     font-weight: 600;
     color: white;
     margin: 0;
+    font-optical-sizing: auto;
     padding: 0;
     color: beige;
-}
-
-.name {
-    display: flex;
-    flex-direction: column;
-    margin-left: 3px;
 }
 
 .navbar {
@@ -42,9 +38,13 @@ h3 {
 .links {
     display: flex;
     max-height: max-content;
-    align-items: center;
     margin: auto;
     padding: 0;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
 }
 
 .profile>img {
@@ -55,9 +55,10 @@ h3 {
     height: 75px;
 }
 
-.profile {
+.name {
     display: flex;
     flex-direction: column;
+    margin-left: 3px;
 }
 
 .weblinks {
@@ -65,10 +66,21 @@ h3 {
     list-style: none;
     margin: auto;
     width: 30rem;
+    padding-top: 17px;
+    padding-left: 25px;
     justify-content: space-between;
 }
 
 .weblinks>li>a:hover,
 a:hover {
     text-decoration: underline;
+}
+
+@media only screen and (max-width: 785px) {
+    .name {
+        display: none;
+    }
+    .weblinks {
+        padding-left: 17px;
+    }
 }
