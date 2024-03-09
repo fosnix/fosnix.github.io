@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+a {
+    text-decoration: none;
+    margin: 0%;
+    padding: 0%;
+    color: wheat;
+    font-family: "Manrope", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: "Prompt", sans-serif;
+    font-size: 27px;
+    font-weight: 600;
+    color: white;
+    margin: 0;
+    padding: 0;
+    color: beige;
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    margin-left: 3px;
+}
+
+.navbar {
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    width: 100%;
+    background: rgb(0, 2, 36);
+    background: linear-gradient(0deg, rgba(0, 2, 36, 1) 55%, rgba(2, 26, 55, 1) 97%);
+    justify-content: center;
+    align-items: center;
+    min-width: max-content;
+}
+
+.links {
+    display: flex;
+    max-height: max-content;
+    align-items: center;
+    margin: auto;
+    padding: 0;
+}
+
+.profile>img {
+    margin: 5px;
+    margin-bottom: 7px;
+    border: 3px;
+    width: 75px;
+    height: 75px;
+}
+
+.profile {
+    display: flex;
+    flex-direction: column;
+}
+
+.weblinks {
+    display: flex;
+    list-style: none;
+    margin: auto;
+    width: 30rem;
+    justify-content: space-between;
+}
+
+.weblinks>li>a:hover,
+a:hover {
+    text-decoration: underline;
+}
